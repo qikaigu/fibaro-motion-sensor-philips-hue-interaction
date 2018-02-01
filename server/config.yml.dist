@@ -1,6 +1,6 @@
-API_KEY:
 philips_hue:
   bridge:
+    api_key:
     ip: 192.168.0.*
   rooms:
     entrance: [5, 6, 7]

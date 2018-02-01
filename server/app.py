@@ -9,7 +9,7 @@ app = Flask(__name__)
 with open('config.yml', 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
 
-API_KEY = cfg['API_KEY']
+api_key = cfg['philips_hue']['bridge']['api_key']
 hue_ip = cfg['philips_hue']['bridge']['ip']
 entrance_lights_ids = cfg['philips_hue']['rooms']['entrance']
 living_room_lights_ids = cfg['philips_hue']['rooms']['living_room']
@@ -26,7 +26,7 @@ def switch_lights(ids, status):
     if status == '1':
         # turn lights on
         for i in ids:
-            url = 'http://{}/api/{}/lights/{}/state'.format(hue_ip, API_KEY, i)
+            url = 'http://{}/api/{}/lights/{}/state'.format(hue_ip, api_key, i)
             body = cfg['philips_hue']['lights'][i]
             body.update({"on": True})
 
@@ -35,7 +35,7 @@ def switch_lights(ids, status):
     elif status == '0':
         # turn lights off
         for i in ids:
-            url = 'http://{}/api/{}/lights/{}/state'.format(hue_ip, API_KEY, i)
+            url = 'http://{}/api/{}/lights/{}/state'.format(hue_ip, api_key, i)
             body = {"on": False}
 
             requests.put(url, data=json.dumps(body))
