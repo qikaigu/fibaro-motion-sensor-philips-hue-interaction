@@ -1,0 +1,45 @@
+API_KEY:
+philips_hue:
+  bridge:
+    ip: 192.168.0.*
+  rooms:
+    entrance: [5, 6, 7]
+    living_room: [3, 9]
+    study: [4]
+  lights:
+    1:
+      sat: 144
+      bri: 254
+      hue: 14910
+    2:
+      sat: 144
+      bri: 254
+      hue: 14910
+    3:
+      sat: 144
+      bri: 254
+      hue: 14910
+    4:
+      sat: 144
+      bri: 254
+      hue: 14910
+    5:
+      sat: 144
+      bri: 254
+      hue: 14910
+    6:
+      sat: 144
+      bri: 254
+      hue: 14910
+    7:
+      sat: 144
+      bri: 254
+      hue: 14910
+    8:
+      sat: 144
+      bri: 254
+      hue: 14910
+    9:
+      sat: 144
+      bri: 254
+      hue: 14910
