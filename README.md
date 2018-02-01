@@ -2,6 +2,8 @@
 
 This repository includes code for an intelligent lighting control system using Internet of Things, more specifically Fibaro Motion Sensors and Philips Hue lights. The system automatically turns on the lights when a motion is detected and turns the lights off after a certain time.
 
+![](diagram.jpg)
+
 ### Requirements
 
 The system requires the 3 following parts:
