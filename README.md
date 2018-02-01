@@ -16,6 +16,7 @@ The system requires the 3 following parts:
     - Reserve a static IP address for the bridge from either Hue mobile app or your DHCP server.
 
 2. Configure the server
+    - Reserve a static IP address for the server.
     - Install required Python libraries.
     - Rename or copy `server/config.yml.dist` to `server/config.yml` and add your Philips Hue bridge API key and IP address into `server/config.yml`.
     - Launch the flask server by running `flask run` and add it as a system service later.
