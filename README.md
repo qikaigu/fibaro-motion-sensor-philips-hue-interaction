@@ -39,4 +39,4 @@ The system requires the 3 following parts:
 - If the server is running on a Raspberry Pi, it is possible to add a microphone or a camera for speech control and face recognition.
 
 ---
-This is a side project that I developed on 2016. A lot of interesting IoT and solutions have been introduced since then so feel free to improve this repository or share it with friends and star it if you like it. Thanks!
+This is a side project that I developed in 2016. A lot of interesting IoT and solutions have been introduced since then so feel free to improve this repository or share it with friends and star it if you like it. Thanks!
